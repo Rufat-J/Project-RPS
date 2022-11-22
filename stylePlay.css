@@ -1,0 +1,220 @@
+
+* {
+    margin: ;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  .img-logo {
+    padding: 1%;
+  }
+
+  #imglogo  {
+    border-radius: 50%;
+  }
+
+
+  header,
+  .score-board,
+  .badge,
+  .result,
+  .winLose,
+  #message {
+    font-family: sans-serif;
+  }
+  
+  body {
+    background-image: url('background2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  
+  header {
+   
+    padding: 10px;
+    font-size: 30px;
+  }
+  
+  header > h1 {
+        display: grid;  
+        position: relative;
+        top: 20px;
+        grid-area: header;
+        text-align: center; 
+        font-size: 80px;
+        font-weight: bold;
+        font-family: 'Zen Tokyo Zoo';
+        text-transform: uppercase;
+        color: #ffd9e2;
+        text-shadow: 0 0 0 transparent,
+        0 0 10px #ff003c,
+        0 0 20px rgba(255, 0, 60, 0.5),
+        0 0 40px #ff003c,
+        0 0 100px #ff003c,
+        0 0 200px #ff003c,
+        0 0 300px #ff003c,
+        0 0 500px #ff003c,
+        0 0 1000px #ff003c;
+        animation: animate 3s infinite alternate;
+      }
+      
+      @keyframes animate {
+          40% {
+              opacity:1;
+          }
+          42% {
+              opacity: 0.8%
+          }
+          43% {
+              opacity: 1%
+          }
+          45% {
+              opacity: 0.3;
+          }
+          46% {
+              opacity: 1;
+          }
+      }
+  
+  
+  .score-board {
+    font-family: 'Zen Tokyo Zoo';
+    margin: 20px auto;
+    border: 7px solid rgb(202, 21, 67);
+    border-radius: 20px;
+    text-align: center;
+    width: 200px;
+    color: white;
+    font-size: 100px;
+    position: relative;
+  }
+  
+  .badge {
+    display: grid;  
+    top: 20px;
+    grid-area: header;
+    text-align: center; 
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Zen Tokyo Zoo';
+    text-transform: uppercase;
+    color: #d7a5f1;
+    text-shadow: 0 0 0 transparent,
+    0 0 10px #ff003c,
+    0 0 20px rgba(255, 0, 60, 0.5),
+    0 0 40px #ff003c,
+    0 0 100px #ff003c,
+    0 0 200px #ff003c,
+    0 0 300px #ff003c,
+    0 0 500px #ff003c,
+    0 0 1000px #ff003c;
+  }
+  
+  
+  #user-label {
+    position: absolute;
+    top: 35px;
+    left: -340px;
+    
+  }
+  
+  #computer-label {
+    position: absolute;
+    top: 35px;
+    right: -390px;
+  }
+  
+  .result {
+    font-family: 'Zen Tokyo Zoo';
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    padding: 1px;
+  }
+  
+  .winLose {
+    font-family: 'Zen Tokyo Zoo';
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    padding: 1px;
+  }
+  
+  .choices {
+    
+    margin: 50px 100px;
+    text-align: center;
+  }
+  
+  .choice {
+    border: 8px solid white;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 0 20px;
+    padding: 20px;
+    transition: 0.5s;
+   
+    /* 
+    animation: moveTo;
+    animation-duration: 5s; */
+  }
+  
+  .choice:hover {
+    cursor: pointer;
+    transform: skewx(5deg);
+    background-color: #040404;
+    /* border-color: #ff003c; */
+    box-shadow: #ff003c;
+    box-shadow: 3px 3px 3px 2px rgba(255, 255, 255, 0.2);
+  }
+  
+  #message {
+    font-family: 'Zen Tokyo Zoo';
+    text-align: center;
+    color: white;
+    font-size: 30px;
+  }
+  
+  /* @keyframes moveTo {
+    form {
+      margin-bottom: 0%;
+    }
+    to {
+      margin: 50%;
+    }
+  } */
+  
+  .r:hover {
+    filter: drop-shadow(4px 4px 2px #8c4c8cac);
+    transition: 0.2s;
+    cursor: pointer;
+    border-color: #cd75db;
+
+  }
+
+  .r {
+    width: 100%;
+  }
+
+  .p {
+    width:86%;
+  }
+
+  .s {
+    width: 70%;
+  }
+
+
+  #r:hover {
+    border-color: #cd75db;
+  }
+
+  #s:hover {
+    border-color: #FFFB6F;
+  }
+
+  #p:hover {
+    border-color: #6CCCFB;
+  }

@@ -25,7 +25,7 @@
   }
   
   body {
-    background-image: url('background2.jpg');
+    background-image: url('/images/background2.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -80,9 +80,10 @@
   
   
   .score-board {
+   
     font-family: 'Zen Tokyo Zoo';
     margin: 20px auto;
-    border: 7px solid rgb(202, 21, 67);
+    border: 7px double rgb(202, 21, 67);
     border-radius: 20px;
     text-align: center;
     width: 200px;
@@ -149,7 +150,7 @@
   }
   
   .choice {
-    border: 8px solid white;
+    border: 8px double white;
     border-radius: 20px;
     display: inline-block;
     margin: 0 20px;
@@ -209,12 +210,15 @@
 
   #r:hover {
     border-color: #cd75db;
+    transform: scale(1.2)
   }
 
   #s:hover {
     border-color: #FFFB6F;
+    transform: scale(1.2)
   }
 
   #p:hover {
     border-color: #6CCCFB;
+   
   }

@@ -8,8 +8,18 @@ const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
 
 
+/*
+document.getElementById("button").onclick = function() {
+  name = document.getElementById("myText").value;
+  document.getElementById("firstName").innerHTML = name;
+}*/
+
+/*const userinput = document.getElementById("userinput").value;*/
+
+
 let userScore = 0;
 let computerScore = 0;
+
 
 function getComputerChoice() {
   let choices = ["r", "p", "s"];
@@ -104,6 +114,12 @@ function main() {
     game("s");
   });
 }
+
+
+
+  const userName = localStorage.getItem('user-Name')
+
+  document.getElementById("user-Name").textContent = userName;
 
 main();
 

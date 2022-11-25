@@ -7,7 +7,7 @@ body {
    
 }
 
-a{
+a {
     letter-spacing: 0.1em;
 }
 
@@ -107,7 +107,7 @@ img {
     color: rgb(93, 216, 235);
 }
 
-.nav1:active {
+.nav1:active {  
     box-shadow: 0 0 200px rgb(59, 155, 246);
 }
 
@@ -128,13 +128,55 @@ img {
  .footer a {
   color: white;
  }
+
+ p {
+    display: grid;  
+    top: 5px;
+    text-align: center; 
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Zen Tokyo Zoo';
+    text-transform: uppercase;
+    color: #d7a5f1;
+/*     text-shadow: 0 0 0 transparent,
+    0 0 10px #ff003c,
+    0 0 20px rgba(255, 0, 60, 0.5),
+    0 0 40px #ff003c,
+    0 0 100px #ff003c,
+    0 0 200px #ff003c,
+    0 0 300px #ff003c,
+    0 0 500px #ff003c,
+    0 0 1000px #ff003c; */
+ }
+
+ .contactInfo {
+    
+    
+    display: grid;  
+    padding: 10px;
+    text-align: center; 
+    font-size: 10px;
+    font-weight: bold;
+    font-family: 'Zen Tokyo Zoo';
+    text-transform: uppercase;
+    color: #d7a5f1;
+    text-shadow: 0 0 0 transparent,
+ /*    0 0 10px #ff003c,
+    0 0 20px rgba(255, 0, 60, 0.5),
+    0 0 40px #ff003c,
+    0 0 100px #ff003c,
+    0 0 200px #ff003c,
+    0 0 300px #ff003c,
+    0 0 500px #ff003c,
+    0 0 1000px #ff003c; */
+ 
+ }
   
 
 
- @media (max-width: 450px) {
+ @media (max-width: 760px) {
     .title {
         font-size: 20px;
-        
     }
 
     .nav-bar{
@@ -162,7 +204,7 @@ img {
  } */
    
 
- @media (min-width: 1080px) {
+ @media (max-width: 1080px) {
   .title {
       font-size: 50px;
   }

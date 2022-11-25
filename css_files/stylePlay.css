@@ -1,9 +1,10 @@
 
 * {
-    margin: ;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+
 
 
   .img-logo {
@@ -187,13 +188,8 @@
     }
   } */
   
-  .r:hover {
-    filter: drop-shadow(4px 4px 2px #8c4c8cac);
-    transition: 0.2s;
-    cursor: pointer;
-    border-color: #cd75db;
-
-  }
+ 
+  
 
   .r {
     width: 100%;
@@ -210,15 +206,25 @@
 
   #r:hover {
     border-color: #cd75db;
-    transform: scale(1.2)
+    transform: scale(1.2);
+    background: rgba(156, 150, 156, 0);
+    box-shadow: 0 0 55px #cd75db;
+    color: rgb(93, 216, 235);
   }
 
   #s:hover {
     border-color: #FFFB6F;
-    transform: scale(1.2)
+    transform: scale(1.2);
+    background: rgba(20, 19, 20, 0);
+    box-shadow: 0 0 55px #FFFB6F;
+    color: rgb(93, 216, 235);
   }
 
   #p:hover {
     border-color: #6CCCFB;
+    transform: scale(1.2);
+    background: rgba(20, 19, 20, 0);
+    box-shadow: 0 0 55px rgb(59, 155, 246);
+    color: rgb(93, 216, 235);
    
   }

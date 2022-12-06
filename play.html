@@ -11,43 +11,52 @@
     <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="img-logo"><a href="index.html"><img id="imglogo" width="10%" src="/images/logo-img1.png" alt="logo"></a></div> 
-    <h1>Rock Paper Scissors</h1>
-  </header>
- 
-  <div class="score-board">
+  <div class="grid-container">
+    <header>
+      <a href="index.html" class="logo"><img src="/images/logo-img1.png" alt="logo" class="logo-img" width="10%"></a>
+      <h1 class="title"> Rock Paper Scissors </h1>
+    </header>
+
+    <section id="section-score-board">
+      <div class="score-board-wrap">
+      <div class="score-board">
+        <div id="user-label" class="badge"> <span id="user-Name"> </span> </div>
+        <div id="computer-label" class="badge">Computer</div>
+        <span id="user-score">0</span>:<span id="computer-score">0</span>
+      </div>
+    </div>
+        <div class="winLose">
+          <p></p>
+        </div>
+        <div class="result">
+          <p>LETS PLAY</p>
+      </div>
+       </section>
+
+    <section id="section-choices">
+        <div class="choices-wrapper">
+          <div class="choice" id="r">
+            <img class="choise r" src="images/1sten.png" alt="Rock"/>
+          </div>
+          <div class="choice" id="p">
+            <img class="choise p" src="images/1påse.png" alt="Paper">
+        </div>
+        <div class="choice" id="s">
+          <img class="choise s" src="images/1sax.png" alt="Scissors"/>
+        </div>
+      </div>
+      
+      <p id="message">Pick your choice</p>
+    </section>
+    <footer>
+      <div class="footer-wrap">
+        <h4>Contact us</h4>
+      </div>
+    </footer>
     
-    <div id="user-label" class="badge"> <span id="user-Name"> </span></div>
-    <div id="computer-label" class="badge">Computer</div>
-    <span id="user-score">0</span>:<span id="computer-score">0</span>
   </div>
 
-  <div class="winLose">
-    <p></p>
-  </div>
 
-  <div class="result">
-    <p>LETS PLAY</p>
-  </div>
-
-  <div class="choices">
-    <div class="choice" id="r">
-      <img class="choise r" src="images/1sten.png" alt="Rock"  />
-    </div>
-    <div class="choice " id="p">
-      <img class="choise p" src="images/1påse.png" alt="Paper"  />
-    </div>
-    <div class="choice" id="s">
-      <img class="choise s" src="images/1sax.png" alt="Scissors"   />
-    </div>
-  </div>
-
-  <p id="message">PICK YOUR CHOICE</p>
-  
-  <script src="main.js">
-
-  
-  </script>
+<script src="main.js"></script>
 </body>
 </html>

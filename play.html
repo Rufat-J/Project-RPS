@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css_files/stylePlay.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
@@ -17,42 +18,59 @@
       <h1 class="title"> Rock Paper Scissors </h1>
     </header>
 
-    <section id="section-score-board">
-      <div class="score-board-wrap">
+    <!-- <section id="section-score-board"> 
+      <div class="score-board-wrap"> 
       <div class="score-board">
+        <span id="user-score">0</span>:<span id="computer-score">0</span></div>
         <div id="user-label" class="badge"> <span id="user-Name"> </span> </div>
         <div id="computer-label" class="badge">Computer</div>
-        <span id="user-score">0</span>:<span id="computer-score">0</span>
+        
+      </div> 
+    </div>-->
+    <section id="section-score-board">
+    
+      
+    <div class="score-board">
+      <div id="user-label" class="badge"> <span id="user-Name"> </span></div>
+      <span id="user-score">0</span>:<span id="computer-score">0</span>
+      <div id="computer-label" class="badge">Computer</div>
+      </div>
+   
+  
+    <div class="winLose">
+      <p></p>
+    </div>
+    <div class="result">
+      <p>LETS PLAY</p>
+    </div>
+  </section>
+  
+  <section id="section-choices">
+    <div class="choices-wrapper">
+      <div class="choice" id="r">
+        <img class="choise r" src="images/1sten.png" alt="Rock"/>
+      </div>
+      <div class="choice" id="p">
+        <img class="choise p" src="images/1påse.png" alt="Paper">
+      </div>
+      <div class="choice" id="s">
+        <img class="choise s" src="images/1sax.png" alt="Scissors"/>
       </div>
     </div>
-        <div class="winLose">
-          <p></p>
-        </div>
-        <div class="result">
-          <p>LETS PLAY</p>
-      </div>
-       </section>
-
-    <section id="section-choices">
-        <div class="choices-wrapper">
-          <div class="choice" id="r">
-            <img class="choise r" src="images/1sten.png" alt="Rock"/>
-          </div>
-          <div class="choice" id="p">
-            <img class="choise p" src="images/1påse.png" alt="Paper">
-        </div>
-        <div class="choice" id="s">
-          <img class="choise s" src="images/1sax.png" alt="Scissors"/>
-        </div>
-      </div>
-      
-      <p id="message">Pick your choice</p>
-    </section>
-    <footer>
-      <div class="footer-wrap">
-        <h4>Contact us</h4>
-      </div>
-    </footer>
+    
+    <p id="message">Pick your choice</p>
+  </section>
+  <footer>
+    <div class="footer-wrap">
+      <h4>Contact us</h4>
+      <ul id="contacts">
+        <li><a href="https://www.facebook.com" class="fa fa-facebook"></a></li>
+        <li><a href="https://www.twitter.com" class="fa fa-twitter"></a></li>
+        <li><a href="http://www.instagram.co" class="fa fa-instagram"></a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
     
   </div>
 

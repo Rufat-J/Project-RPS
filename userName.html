@@ -1,48 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css_files/username.css">
-</head>
+    <link rel="stylesheet" href="css_files/username.css" />
+  </head>
 
-<body>
-    
+  <body>
     <form id="form">
-        <div>
-            <label for="userName">Username:</label>
-            <input id="userName" type="text" maxlength="10">
-        </div>
-        <div>
-            <button type="submit"> Enter </button>
-        </div>
+      <div>
+        <label for="userName">Username:</label>
+        <input id="userName" type="text" maxlength="8" />
+      </div>
+      <div>
+        <button type="submit">Enter</button>
+      </div>
     </form>
 
-
-    
     <script>
-      const form = document.getElementById('form')
-      const userName = document.getElementById('userName')
-      
-      form.addEventListener('submit', function(e) {
+      const form = document.getElementById("form");
+      const userName = document.getElementById("userName");
+
+      form.addEventListener("submit", function (e) {
         e.preventDefault();
 
-        const userNameValue = userName.value
+        const userNameValue = userName.value;
 
         localStorage.setItem("user-Name", userNameValue);
 
-         window.location.href = "play.html";
-      })
-      
-        //  function myFunction() {
-         
+        window.location.href = "play.html";
+      });
 
-        //  var name = document.getElementById("firstName").value;
-        //  document.getElementById("greeting").innerHTML = name;
+      //  function myFunction() {
 
+      //  var name = document.getElementById("firstName").value;
+      //  document.getElementById("greeting").innerHTML = name;
     </script>
 
     <!-- <div class="modal hidden">
@@ -53,6 +47,5 @@
         </p>
       </div>
       <div class="overlay hidden"></div> -->
-</body>
-
+  </body>
 </html>

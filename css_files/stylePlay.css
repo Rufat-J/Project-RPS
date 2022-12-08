@@ -1,109 +1,98 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-  }
-
-  body {
-    background-image: url('/images/background2.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-  }
-
-
-  .grid-container {
-    display: grid;   
-    grid-template-columns: 1fr ;
-    grid-template-rows: 0.5fr 1.3fr 1fr 1fr;
-    grid-template-areas: 
-                        "header"
-                        "section1"
-                        "section2"
-                        "footer";
-  }
-
-
-  header{
-    display: grid;
-    grid-area: header;
-  }
-
-  #section-score-board {
-    display: grid;
-    grid-area: section1;
-    color: white;
-    place-items: center;
-    align-items: start;
-  }
-  
- #section-choices {
-  display:grid;
-  grid-area: section2
- }
-
- 
- footer {
-  display:grid;
-  grid-area: footer;
-  color: white;
- }
-
- .footer-wrap {
-  display:flex;
-  justify-content: center;
-  align-items: flex-end;
- }
-
-
- .title {
-  display: flex;
-  justify-content: center;
-
-  font-size: 4vw;
-  font-weight: bold;
-  font-family: 'Zen Tokyo Zoo';
-  text-transform: uppercase;
-  color: #ffd9e2;
-  text-shadow: 0 0 0 transparent,
-  0 0 10px #ff003c,
-  0 0 20px rgba(255, 0, 60, 0.5),
-  0 0 40px #ff003c,
-  0 0 100px #ff003c,
-  0 0 200px #ff003c,
-  0 0 300px #ff003c,
-  0 0 500px #ff003c,
-  0 0 1000px #ff003c;
-  animation: animate 3s infinite alternate;
- }
-
- @keyframes animate {
-  40% {
-      opacity:1;
-  }
-  42% {
-      opacity: 0.8%
-  }
-  43% {
-      opacity: 1%
-  }
-  45% {
-      opacity: 0.3;
-  }
-  46% {
-      opacity: 1;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  background-image: url("/images/background2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.grid-container {
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 0.4fr 0.4fr 1fr;
+  grid-template-areas:
+    "header"
+    "section1"
+    "section2"
+    "footer";
+}
+
+header {
+  display: grid;
+  grid-area: header;
+}
+
+#section-score-board {
+  display: grid;
+  grid-area: section1;
+  color: white;
+  place-items: center;
+  align-items: start;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#section-choices {
+  display: grid;
+  grid-area: section2;
+}
+
+footer {
+  display: grid;
+  grid-area: footer;
+  color: white;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-size: 4vw;
+  font-weight: bold;
+  font-family: "Zen Tokyo Zoo";
+  text-transform: uppercase;
+  color: #ffd9e2;
+  text-shadow: 0 0 0 transparent, 0 0 10px #ff003c,
+    0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #ff003c, 0 0 100px #ff003c,
+    0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c, 0 0 1000px #ff003c;
+  animation: animate 3s infinite alternate;
+}
+
+@keyframes animate {
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.8%;
+  }
+  43% {
+    opacity: 1%;
+  }
+  45% {
+    opacity: 0.3;
+  }
+  46% {
+    opacity: 1;
+  }
+}
 
 .score-board {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Zen Tokyo Zoo';
- /*  margin: 2rem auto; */
+  font-family: "Zen Tokyo Zoo";
+  /*  margin: 2rem auto; */
   border: 0.4rem double rgb(202, 21, 67);
   width: 8vw;
   color: white;
@@ -111,53 +100,42 @@
   position: relative;
   /* height: 5rem; */
   /* height: 10vh; */
-  top: 40px;
+  top: -2rem;
   margin: 5%;
   /* flex-grow: 1; */
-  
 }
 
 .badge {
   display: flex;
   justify-self: center;
   align-self: center;
-  
-  
 }
 
-
-.score-board-wrap{
+.score-board-wrap {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 2%;
   margin: 2%;
-  
 }
 
-
 #user-label {
-  
   position: absolute;
-  top: 35%;
+  top: 5%;
   left: -300%;
- 
-  margin: 5%;
-  
-  
-  
+
+  margin: auto;
 }
 
 #computer-label {
   position: absolute;
-  top: 35%;
+  top: 5%;
   right: -420%;
   margin: auto;
-  
 }
 
 #message {
-  font-family: 'Zen Tokyo Zoo';
+  font-family: "Zen Tokyo Zoo";
   text-align: center;
   color: white;
   font-size: 5vh;
@@ -165,13 +143,25 @@
 
 .result {
   display: flex;
-  align-items: center;
-  font-family: 'Zen Tokyo Zoo';
+  /*  align-items: center; */
+  position: relative;
+  top: -6rem;
+  font-family: "Zen Tokyo Zoo";
   font-size: 3vw;
   text-align: center;
   color: white;
 }
 
+.winLose {
+  font-family: "Zen Tokyo Zoo";
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  padding: 1px;
+  margin-top: 2%;
+  position: relative;
+  top: -6rem;
+}
 
 .result p {
   margin-top: 5%;
@@ -190,10 +180,7 @@
   width: 40%;
   margin-left: auto;
   margin-right: auto;
-  
 }
-
-
 
 .choice {
   border: double white;
@@ -201,18 +188,17 @@
   border-radius: 20%;
   display: flex;
   justify-content: center;
-  margin:  3%;
+  margin: 3%;
   padding: 4%;
   transition: 0.5s;
 }
-
 
 .r {
   width: 90%;
 }
 
 .p {
-  width:86%;
+  width: 86%;
 }
 
 .s {
@@ -251,19 +237,16 @@
   color: rgb(93, 216, 235);
 }
 
-
 .footer-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
 }
 
 .contacts li {
   display: flex;
   flex-direction: row;
-
 }
 
 h4 {
@@ -274,22 +257,20 @@ li {
   display: flex;
   list-style: none;
   padding: 10px;
-  font-size: 1rem 
+  font-size: 1rem;
 }
 
-ul{
+ul {
   display: flex;
-
 }
 
 li a {
- 
   display: flex;
   justify-content: center;
   text-decoration: none;
   font-size: 1vw;
   color: white;
-  
+
   flex-direction: row;
 }
 
@@ -300,38 +281,91 @@ li a {
   height: 15px;
   text-align: center;
   text-decoration: none;
-  
 }
 
-
 .fa-facebook {
-  background:#2d3546d7;
+  background: #2d3546d7;
   color: rgb(253, 252, 252);
 }
 
-
 .fa-twitter {
-  background:#2d3546d7;
+  background: #2d3546d7;
   color: #fdfbfb;
 }
 
 .fa-instagram {
-  background:#2d3546d7;
+  background: #2d3546d7;
   color: #fefefd;
 }
 
-@media (max-width: 500px) {
-  
-#user-label {
-  left: -600%;
-}
+/*
+@media (max-width: 600px) {
+  #user-score {
+    font-size: 1.4rem;
+    padding: 2%;
+  }
 
-#computer-label {
-  right: -600%;
-}
-}
+  #computer-score {
+    font-size: 1.4rem;
+    padding: 2%;
+  }
 
+  .score-board {
+    font-size: 2rem;
+    border: 0.3rem double rgb(202, 21, 67);
+  }
+}*/
 
+@media (max-width: 1000px) {
+  #user-label {
+    left: -600%;
+    margin-left: 10%;
+    font-size: 2rem;
+  }
+
+  #computer-label {
+    right: -600%;
+    font-size: 2rem;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.7fr 1fr 2fr;
+    grid-template-areas:
+      "header"
+      "section1"
+      "section2"
+      "footer";
+  }
+  #message {
+    font-size: 2rem;
+  }
+
+  .winLose {
+    /* font-size: 1.2rem; */
+    margin-top: 23%;
+  }
+
+  /* .result {
+    font-size: 1rem;
+  } */
+
+  #user-score {
+    /* font-size: 2rem; */
+    padding: 2%;
+  }
+
+  #computer-score {
+    /* font-size: 2rem; */
+    padding: 2%;
+  }
+
+  .score-board {
+    font-size: 2.5rem;
+    border: 0.3rem double rgb(202, 21, 67);
+  }
+}
 
 /* .score-board {
   
@@ -360,8 +394,6 @@ li a {
   align-items: center;
 } */
 
-
-
 /* #user-label {
  position: relative;
  top: 3.5vh;
@@ -382,7 +414,7 @@ li a {
   font-size: 2rem;
 } */
 
- /* #user-score {
+/* #user-score {
 
   display: flex;
   position: relative;
@@ -395,9 +427,6 @@ li a {
   position: relative;
   justify-content: center;
 }  */
-
-
-
 
 /* .score-board {
    
@@ -412,16 +441,6 @@ li a {
     position: relative;
   }
  */
-
-
-
-
-
-
-
-
-
-
 
 /*   .img-logo {
     padding: 1%;

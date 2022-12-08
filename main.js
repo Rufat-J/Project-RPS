@@ -123,3 +123,36 @@ function main() {
 
 main();
 
+
+let nav1 = document.querySelectorAll('.nav1')
+let body = document.querySelector('body')
+/* let audio = document.querySelector('#audio') */
+
+
+const audio = new Audio();
+audio.src = "beep.mp3";
+
+function clickSound() {
+
+  audio.play()
+}
+
+
+
+function stone () {
+  const stone = document.getElementById('stone')
+  stone.play()
+  stone.volume = 0.3
+}
+
+function scissors () {
+  const scissors = document.getElementById('scissors')
+  scissors.play()
+  audio.volume
+}
+
+
+function paper () {
+  const paper = document.getElementById('paper')
+  paper.play()
+}

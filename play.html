@@ -57,13 +57,13 @@
   
   <section id="section-choices">
     <div class="choices-wrapper">
-      <div class="choice" id="r">
+      <div onclick="stone()" class="choice" id="r">
         <img class="choise r" src="images/1sten.png" alt="Rock"/>
       </div>
-      <div class="choice" id="p">
+      <div onclick="paper()" class="choice" id="p">
         <img class="choise p" src="images/1påse.png" alt="Paper">
       </div>
-      <div class="choice" id="s">
+      <div onclick="scissors()" class="choice" id="s">
         <img class="choise s" src="images/1sax.png" alt="Scissors"/>
       </div>
     </div>
@@ -83,7 +83,9 @@
 </div>
     
   </div>
-
+  <audio id="paper" src="paper.mp3" autostart="false"></audio>
+  <audio id="stone" src="stone.mp3" autostart="false"></audio>
+  <audio id="scissors" src="scissors.mp3" autostart="false"></audio>
 
 <script src="main.js"></script>
 </body>

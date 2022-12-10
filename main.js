@@ -119,7 +119,7 @@ function main() {
 
   const userName = localStorage.getItem('user-Name')
 
-  document.getElementById("user-Name").textContent = userName;
+ /*  document.getElementById("user-Name").textContent = userName; */
 
 main();
 
@@ -156,3 +156,53 @@ function paper () {
   const paper = document.getElementById('paper')
   paper.play()
 }
+
+
+
+{/* <div class="avatars">
+<img id="avatar-male" src="avatar1.png" alt="avatar male">
+<input class="checkbox" type="checkbox">
+<img src="avatar2.png" alt="avatar female">
+</div> */}
+
+
+const form = document.getElementById("form");
+const uuserName = document.getElementById("uuserName");
+const avatarName = document.querySelector('avatarName')
+const overlay = document.querySelector('overlay1')
+const gridContainer = document.querySelector('.grid-container')
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const uuserNameValue = uuserName.value;
+    document.querySelector('.overlay1').style.display = 'none'
+    document.querySelector('#uuserName1').textContent = uuserName.value;
+    gridContainer.style.display = 'grid'
+    console.log(uuserNameValue)
+
+
+});
+
+const female = document.querySelector('#female')
+const male = document.querySelector('#male')
+const femaleAvatar= document.querySelector('#Female-checked')
+
+const maleAvatar = document.querySelector('#Male-checked')
+
+maleAvatar.addEventListener ('change', function() {
+    if (maleAvatar.checked) {
+        female.style.display = 'none'
+        male.style.display = 'flex'
+    }
+})
+
+femaleAvatar.addEventListener('change', function() {
+    if(femaleAvatar.checked) {
+        console.log('Female')
+        male.style.display ='none'
+        female.style.display= 'flex'
+        }
+      
+     
+    })

@@ -6,16 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css_files/stylePlay.css">
+    <link rel="stylesheet" href="css_files/username.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Rubik+Vinyl&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    
 </head>
 <body>
+
+  <div class="overlay1" alt="userInfo">
+
+    <form id="form">
+      <div class="avatars-Overlay">
+        <div class="title-Overlay"> <h1 id="avatar">Pick your Avatar</h1></div>
+         
+          <div class="wrapAvatars">
+          
+          <label class="avatars-overlay">
+            <input required id="Male-checked" name="avatar" type="radio">
+            <img id="avatar-male" src="male.png" alt="avatar male" width="80%">
+          </label>
+    
+          <label class="avatars-overlay">
+          <input required id="Female-checked" name="avatar" type="radio">
+          <img id="avatar-female" src="female.png" alt="avatar female" width="80%">
+        </label>
+            </div>
+          
+     
+      </div>
+
+      <div class="userNameInfo">
+        <label id="username-label" for="uuserName">Username:</label>
+        <input required="" id="uuserName" type="text" min="3" maxlength="8" />
+        <div class="div-button">
+          <button id="enter-button" value="Test Required" type="submit">Enter</button>
+        </div>
+      </div>
+    
+    </form>
+ 
+  </div>
+
+
   <div class="grid-container">
     <header>
       <a href="index.html" class="logo"><img src="/images/logo-img1.png" alt="logo" class="logo-img" width="10%"></a>
       <h1 class="title"> Rock Paper Scissors </h1>
+     
     </header>
 
     <!-- <section id="section-score-board"> 
@@ -28,12 +71,26 @@
       </div> 
     </div>-->
     <section id="section-score-board">
-
-    <div class="score-board-wrap">
-    <span id="user-Name"> </span>
-    <div class="score-wrap"><span id="user-score">0</span>:<span id="computer-score">0</span></div>
-    <div id="computer-label" class="badge">Computer</div>  
+     
+    <div class="avatars">
+    
+    <div class="wrapz">
+    <div class="userInfo">  
+    <img id="male" src="male.png" alt="robot" width="27%">
+    <img id="female" src="female.png" alt="robot" width="27%">
+    <span id="uuserName1"> </span>
+     </div>  
+    <div class="robotInfo">
+    <img class="robot" src="robot.png" alt="robot" width="50%">
+    <span id="computer-label" class="badge">Computer</span> 
     </div>
+   </div>
+    <div class="score-wrap"><span id="user-score">0</span>:<span id="computer-score">0</span></div>
+
+    
+   
+     </div>
+    
     
     <div class="winLose-Result">
       <div class="winLose">

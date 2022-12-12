@@ -4,8 +4,6 @@
   box-sizing: border-box;
 }
 
-
-
 body {
   background-image: url("/images/background2.jpg");
   background-repeat: no-repeat;
@@ -24,11 +22,9 @@ body {
     "footer";
 }
 
-#male{
+#male {
   display: none;
 }
-
-
 
 /* .grid-container {
   display:none
@@ -47,7 +43,6 @@ header {
   align-items: start;
   grid-row-start: 2;
   grid-row-end: 3;
-  
 }
 
 #section-choices {
@@ -55,14 +50,12 @@ header {
   grid-area: section2;
 }
 
-
 .avatars {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding-top: 60px;
-
 }
 
 .robotInfo {
@@ -70,8 +63,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 45%
-
+  width: 45%;
 }
 
 .userInfo {
@@ -79,9 +71,8 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 45%
+  width: 45%;
 }
-
 
 .score-board-wrap {
   display: flex;
@@ -92,14 +83,11 @@ header {
   margin: 2% 0;
 }
 
-
-.wrapz{
+.wrapz {
   display: flex;
   justify-content: space-around;
   width: 100%;
   align-items: center;
-
-
 }
 
 .avatars {
@@ -109,16 +97,13 @@ header {
 }
 
 #male {
- 
 }
 
 #uuserName1 {
   font-family: "Zen Tokyo Zoo";
   font-size: 4vw;
   padding: 2rem;
-  
 }
-
 
 #computer-label {
   font-family: "Zen Tokyo Zoo";
@@ -129,11 +114,9 @@ header {
 #user-Name {
   width: 170px;
   font-size: 4rem;
-  display:flex;
+  display: flex;
   justify-content: center;
-
 }
-
 
 /* #empty {
   display:flex;
@@ -142,11 +125,10 @@ header {
   width: 60px;
 } */
 
-.robot{
+.robot {
   position: relative;
-  width: 25%
+  width: 25%;
 }
-
 
 .winLose {
   display: flex;
@@ -161,17 +143,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
-
- 
-
-  
-  /* border: 3px double rgb(231, 164, 164);
+/* border: 3px double rgb(231, 164, 164);
   padding: 10px;
   background-color: #cd75db44; */
-
 
 .winLose-Result div {
   font-family: "Zen Tokyo Zoo";
@@ -209,7 +185,7 @@ footer {
 .title {
   display: flex;
   justify-content: center;
-  
+
   font-size: 3vw;
   font-weight: bold;
   font-family: "Zen Tokyo Zoo";
@@ -238,8 +214,6 @@ footer {
     opacity: 1;
   }
 }
-
-
 
 .score-board-wrap span {
   font-family: "Zen Tokyo Zoo";
@@ -440,13 +414,11 @@ li a {
   display: none;
 }
 
-
 .male-avatar {
   border: 5px solid rgb(116, 239, 128);
   background-color: #83a3857d;
   border-radius: 50%;
   box-shadow: 3px 4px 7px 3px rgb(68, 135, 76);
-  
 }
 
 .robot {

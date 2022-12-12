@@ -6,6 +6,7 @@ const winLose_p = document.querySelector(".winLose > p");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
+let rounds;
 
 
 /*
@@ -40,6 +41,10 @@ function win(user, computer) {
   result_p.innerHTML =
     convertToWord(user) + " beats " + convertToWord(computer);
   winLose_p.innerHTML = "YOU WIN";
+
+  if(userScore == rounds) {
+    winLose_p.innerHTML = "You won best of "+ rounds + " !"
+  }
 }
 function lose(user, computer) {
   computerScore++;
@@ -48,6 +53,9 @@ function lose(user, computer) {
   result_p.innerHTML =
     convertToWord(user) + " loses to " + convertToWord(computer);
   winLose_p.innerHTML = "YOU LOSE";
+  if(computerScore == rounds) {
+    winLose_p.innerHTML = "You lost best of "+ rounds + " !"
+  }
 }
 function draw(user, computer) {
   result_p.innerHTML =
@@ -181,8 +189,11 @@ form.addEventListener("submit", function (e) {
     gridContainer.style.display = 'grid'
     console.log(uuserNameValue)
 
+    rounds = parseInt(prompt("How many rounds would you like to play?"))
+    document.getElementById("bestOf").innerText = "Best of " + rounds;
 
-});
+
+})
 
 const female = document.querySelector('#female')
 const male = document.querySelector('#male')

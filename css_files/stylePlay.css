@@ -343,7 +343,6 @@ li a {
   text-decoration: none;
   font-size: 1vw;
   color: white;
-
   flex-direction: row;
 }
 
@@ -371,6 +370,11 @@ li a {
   color: #fefefd;
 }
 
+#bestOf {
+  font-family: "Zen Tokyo Zoo";
+  font-size: 5vw;
+}
+
 @media (max-width: 1000px) {
   .grid-container {
     grid-template-rows: 0.7fr 0.9fr 3fr 0.1fr;
@@ -381,11 +385,22 @@ li a {
   .grid-container {
     grid-template-rows: 2fr 3fr 5fr 0.2fr;
   }
+
+  .winLose-Result div {
+    font-size: 5vw;
+  }
+  .winLose-Result p {
+    font-size: 5vw;
+  }
 }
 
 @media (orientation: landscape) {
   .grid-container {
     grid-template-rows: 0.1fr 0.5fr 0.5fr 0.1fr;
+  }
+
+  #bestOf {
+    margin-top: 5%;
   }
   /* .title {
     font-size: 3vw;

@@ -56,10 +56,23 @@ h4 {
   font-weight: bold;
   font-family: "Zen Tokyo Zoo";
   color: #eabfc8;
+  
 }
+
 
 a {
   text-decoration: none;
+} 
+
+#contacts li {
+  display: inline;
+  /*justify-content: center;*/
+  list-style: none;
+  text-decoration: none;
+  font-size: 1vw;
+  color: white;
+  /*flex-direction: row;*/
+  text-align: center;
 }
 
 .footer-wrap {

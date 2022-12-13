@@ -40,8 +40,8 @@
     align-items: center;
     font-size: 2rem;
     font-family: 'Zen Tokyo Zoo' ;
-    border: 7px double white;
-    background-color: #ff003c8d;
+    border: 7px double rgb(177, 213, 229);
+    background-color: #343b3e8d;
     color: rgb(250, 250, 250);
     border-radius: 20%;
     padding: 10px;

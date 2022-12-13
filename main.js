@@ -8,6 +8,7 @@ const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
 
 
+
 /*
 document.getElementById("button").onclick = function() {
   name = document.getElementById("myText").value;
@@ -29,6 +30,11 @@ function ressset() {
   userScore_span.innerHTML = 0;
   userScore = 0;
   computerScore = 0;
+  userScore_span.style.color = 'white'
+  computerScore_span.style.color = 'white'
+  result_p.innerHTML = ' '
+  winLose_p.innerHTML = ' '
+  result_p.innerHTML = "LETS PLAY";
 }
 
 function getComputerChoice() {
@@ -43,6 +49,8 @@ function convertToWord(letter) {
   return "Scissors";
 }
 
+const wow = ":"
+
 function win(user, computer) {
   userScore++;
   userScore_span.innerHTML = userScore;
@@ -50,6 +58,7 @@ function win(user, computer) {
   result_p.innerHTML =
     convertToWord(user) + " beats " + convertToWord(computer);
   winLose_p.innerHTML = "YOU WIN";
+  winLose_p.style.color = 'rgb(50, 165, 58)'
 
 }
 function lose(user, computer) {
@@ -59,6 +68,7 @@ function lose(user, computer) {
   result_p.innerHTML =
     convertToWord(user) + " loses to " + convertToWord(computer);
   winLose_p.innerHTML = "YOU LOSE";
+  winLose_p.style.color = 'rgba(200, 20, 50, 0.8)'
   
 }
 
@@ -70,6 +80,7 @@ function draw(user, computer) {
   result_p.innerHTML =
     convertToWord(user) + " is equal to " + convertToWord(computer);
   winLose_p.innerHTML = "IT´S A DRAW";
+  winLose_p.style.color = 'orange'
 }
 
 function game(userChoice) {
@@ -93,6 +104,19 @@ function game(userChoice) {
   ) {
     draw(userChoice, computerChoice);
   }
+  if (userScore > computerScore) {
+    userScore_span.style.color = 'rgb(50, 165, 58)'
+    computerScore_span.style.color = 'rgba(200, 20, 50, 0.8)'
+  } else if (userScore === computerScore){
+    userScore_span.style.color = 'white'
+    computerScore_span.style.color = 'white'
+  } 
+  else  {
+    userScore_span.style.color = 'rgba(200, 20, 50, 0.8)'
+    computerScore_span.style.color = 'rgb(50, 165, 58)'
+  } 
+ 
+  
 }
 
 // function game(userChoice) {
@@ -134,7 +158,7 @@ function main() {
 
 
 
-  const userName = localStorage.getItem('user-Name')
+ /*  const userName = localStorage.getItem('user-Name') */
 
  /*  document.getElementById("user-Name").textContent = userName; */
 
@@ -220,3 +244,22 @@ femaleAvatar.addEventListener('change', function() {
         female.style.display= 'flex'
         }     
     })
+
+
+onOffBtn = document.querySelector('.onOffBtn')
+
+onOffBtn.addEventListener('click', onOffBtn)
+
+function onOff() {
+  console.log("Hej")
+  if (onOff.checked){
+    console.log("Hej")
+    title.style.display = 'none'
+   
+    
+  } else {
+    title.style.display = 'inline'
+  
+  
+  }
+}

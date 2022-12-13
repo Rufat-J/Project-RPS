@@ -1,5 +1,5 @@
-const userScore_span = document.getElementById("user-score");
-const computerScore_span = document.getElementById("computer-score");
+let userScore_span = document.getElementById("user-score");
+let computerScore_span = document.getElementById("computer-score");
 const scoreBoard_div = document.querySelector(".score-board");
 const result_p = document.querySelector(".result > p");
 const winLose_p = document.querySelector(".winLose > p");
@@ -20,6 +20,16 @@ document.getElementById("button").onclick = function() {
 let userScore = 0;
 let computerScore = 0;
 
+reset = document.querySelector('#reset')
+
+
+function ressset() {
+  console.log("hej")
+  computerScore_span.innerHTML = 0;
+  userScore_span.innerHTML = 0;
+  userScore = 0;
+  computerScore = 0;
+}
 
 function getComputerChoice() {
   let choices = ["r", "p", "s"];
@@ -40,6 +50,7 @@ function win(user, computer) {
   result_p.innerHTML =
     convertToWord(user) + " beats " + convertToWord(computer);
   winLose_p.innerHTML = "YOU WIN";
+
 }
 function lose(user, computer) {
   computerScore++;
@@ -48,8 +59,14 @@ function lose(user, computer) {
   result_p.innerHTML =
     convertToWord(user) + " loses to " + convertToWord(computer);
   winLose_p.innerHTML = "YOU LOSE";
+  
 }
+
+
+
+
 function draw(user, computer) {
+
   result_p.innerHTML =
     convertToWord(user) + " is equal to " + convertToWord(computer);
   winLose_p.innerHTML = "IT´S A DRAW";
@@ -178,8 +195,8 @@ form.addEventListener("submit", function (e) {
     const uuserNameValue = uuserName.value;
     document.querySelector('.overlay1').style.display = 'none'
     document.querySelector('#uuserName1').textContent = uuserName.value;
-    gridContainer.style.display = 'grid'
-    console.log(uuserNameValue)
+   /*  gridContainer.style.display = 'grid' */
+  
 
 
 });
@@ -199,10 +216,7 @@ maleAvatar.addEventListener ('change', function() {
 
 femaleAvatar.addEventListener('change', function() {
     if(femaleAvatar.checked) {
-        console.log('Female')
         male.style.display ='none'
         female.style.display= 'flex'
-        }
-      
-     
+        }     
     })

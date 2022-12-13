@@ -1,5 +1,3 @@
 {
-  "liveServer.settings.port": 5503,
-  "workbench.iconTheme": "vs-seti",
-  "workbench.colorTheme": "Atom One Dark"
+    "liveServer.settings.port": 5504
 }

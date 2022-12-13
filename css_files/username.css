@@ -21,16 +21,16 @@
   height: 100%;
   width: 100%;
   
-/*   background-color: rgba(123, 114, 114, 0.447) ; */
+  /* background-color: rgba(146, 217, 244, 0.461) ; */
   backdrop-filter: blur(30px);
   z-index: 5;
 }
 
 #avatar {
   padding: 4%;
-  font-family: 'Amatic SC', cursive;
+  font-family: "Zen Tokyo Zoo", cursive;
   font-size: 4vw;
-  color: rgb(239, 173, 73);
+  color: rgb(232, 225, 225);
   text-shadow: 4px 3px 2px rgb(6, 6, 6);
   text-align: center;
 }
@@ -50,10 +50,10 @@
 }
 
 #username-label {
-  font-family: 'Amatic SC', cursive;;
+  font-family: 'Zen Tokyo Zoo', cursive;;
   display: flex;
   justify-content: center;
-  color:rgb(239, 173, 73);
+  color:rgb(250, 250, 250);
   font-size: 3rem;
   padding: 0 2rem;
   margin: 1rem;

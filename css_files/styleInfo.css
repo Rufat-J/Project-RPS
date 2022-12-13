@@ -1,116 +1,78 @@
 .imglogoInfo {
-  border-radius: 50%;
-  padding: 1%;
-  width: 5%;
+    border-radius: 50%; 
+    padding: 1%
 }
+
 
 body {
-  background-image: url("/images/background2.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
+    background-image: url('/images/background2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+   
 }
+
+
 
 h1 {
-  display: flex;
-  justify-content: center;
-  font-size: 5vw;
-  font-weight: bold;
-  font-family: "Zen Tokyo Zoo";
-  text-transform: uppercase;
-  color: #ffd9e2;
-  text-shadow: 0 0 0 transparent, 0 0 10px #ff003c,
-    0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #ff003c, 0 0 100px #ff003c,
-    0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c, 0 0 1000px #ff003c;
-  animation: animate 3s infinite alternate;
-  align-items: center;
-}
-
-h4 {
-  color: white;
+    top: 40px;
+    text-align: center; 
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Zen Tokyo Zoo';
+    text-transform: uppercase;
+    color: #d7a5f1;
+    text-shadow: 0 0 0 transparent,
+    0 0 10px #ff003c,
+    0 0 20px rgba(255, 0, 60, 0.5),
+    0 0 40px #ff003c,
+    0 0 100px #ff003c,
+    0 0 200px #ff003c,
+    0 0 300px #ff003c,
+    0 0 500px #ff003c,
+    0 0 1000px #ff003c;
+    animation: animate 3s infinite alternate;
 }
 
 @keyframes animate {
-  40% {
-    opacity: 1;
-  }
-  42% {
-    opacity: 0.8%;
-  }
-  43% {
-    opacity: 1%;
-  }
-  45% {
-    opacity: 0.3;
-  }
-  46% {
-    opacity: 1;
-  }
+    40% {
+        opacity:1;
+    }
+    42% {
+        opacity: 0.8%
+    }
+    43% {
+        opacity: 1%
+    }
+    45% {
+        opacity: 0.3;
+    }
+    46% {
+        opacity: 1;
+    }
 }
 
 .info {
-  padding: 10%;
-  top: 30px;
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
-  font-family: "Zen Tokyo Zoo";
-  color: #eabfc8;
-  
-}
+    padding: 10%;
+    top: 30px;
+    text-align: center; 
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Zen Tokyo Zoo';
+    color: #eabfc8;
 
+}
 
 a {
-  text-decoration: none;
-} 
-
-#contacts li {
-  display: inline;
-  /*justify-content: center;*/
-  list-style: none;
-  text-decoration: none;
-  font-size: 1vw;
-  color: white;
-  /*flex-direction: row;*/
-  text-align: center;
+    text-decoration: none;
 }
 
-.footer-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.fa {
-  padding: 2px;
-  font-size: 20px;
-  width: 15px;
-  height: 15px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.fa-facebook {
-  background: #2d3546d7;
-  color: rgb(253, 252, 252);
-}
-
-.fa-twitter {
-  background: #2d3546d7;
-  color: #fdfbfb;
-}
-
-.fa-instagram {
-  background: #2d3546d7;
-  color: #fefefd;
-}
 
 @media (max-width: 430px) {
-  h1 {
+h1 {
     font-size: 50px;
-  }
-  h3 {
+}
+h3{
     font-size: 30px;
-  }
+}
 }

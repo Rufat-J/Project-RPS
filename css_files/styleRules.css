@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 .imglogoRules {
   border-radius: 50%;
   padding: 1%;
@@ -8,18 +10,19 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
+  background-color: black;
 }
 
 h1 {
-  display: grid;
-  top: 40px;
-  grid-area: header;
-  text-align: center;
-  font-size: 70px;
+  display: flex;
+  margin-top: 0%;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vw;
   font-weight: bold;
   font-family: "Zen Tokyo Zoo";
   text-transform: uppercase;
-  color: #d7a5f1;
+  color: #ffd9e2;
   text-shadow: 0 0 0 transparent, 0 0 10px #ff003c,
     0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #ff003c, 0 0 100px #ff003c,
     0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c, 0 0 1000px #ff003c;
@@ -45,41 +48,135 @@ h1 {
 }
 
 .rulesInfo {
-  padding: 10%;
-  display: grid;
-  top: 40px;
-  grid-area: header;
-  text-align: center;
-  font-size: 25px;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 2%;
+  font-size: 2vw;
   font-weight: bold;
-  font-family: "Zen Tokyo Zoo";
+  font-family: 'Roboto', sans-serif;
   /*text-transform: uppercase;*/
   color: #eabfc8;
-
-  /*     text-shadow: 0 0 0 transparent,
-    0 0 10px #ff003c,
-    0 0 20px rgba(255, 0, 60, 0.5),
-    0 0 40px #ff003c,
-    0 0 100px #ff003c,
-    0 0 200px #ff003c,
-    0 0 300px #ff003c,
-    0 0 500px #ff003c,
-    0 0 1000px #ff003c; */
 }
 
-h3 {
-  font-size: 40px;
+#rules {
+  font-size: 2vw;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 1vw;
 }
 
+#footerwrap  {
+  margin-top: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#footerSection a {
+  display: inline;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  width: 5%;
+  height:15%;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.fa-facebook {
+  background: #000309d7;
+  color: rgb(253, 252, 252);
+  
+}
+
+.fa-twitter {
+  background: #000309d7;
+  color: #fdfbfb;
+
+}
+
+.fa-instagram {
+  background: #000309d7;
+  color: #fefefd;
+}
+@media (max-width: 1200px){
+  h1 {
+    margin-top: 10%;
+  }
+  #footerwrap {
+    margin-top: 20%;
+  }
+}
+
+@media (max-width: 900px){
+  h3 {
+    font-size: 3vw;
+  }
+  #footerwrap {
+    margin-top: 20%;
+  }
+  #rules {
+    margin-top: 10%;
+  }
+
+  h1 {
+    margin-top: 5%;
+  }
+
+  p {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 700px){
+  h3 {
+    font-size: 3vw;
+  }
+  h1 {
+    margin-top: 10%;
+  }
+  #footerwrap {
+    margin-top: 40%;
+  }
+  #rules {
+    font-size: 3vw;
+    margin-top: 15%;
+  }
+
+  p {
+    font-size: 3vw;
+  }
+}
 @media (max-width: 430px) {
   h1 {
-    font-size: 50px;
+    font-size: 5vw;
+    margin-top: 12%;
   }
   h3 {
-    font-size: 30px;
+    font-size: 5vw;
   }
-}
+  #footerwrap {
+    margin-top: 50%;
+  }
+  #rules {
+    font-size: 5vw;
+    margin-top: 20%;
+  }
 
-li {
-  list-style-type: none;
+
 }

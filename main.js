@@ -6,26 +6,33 @@ const winLose_p = document.querySelector(".winLose > p");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
-
-
-
-/*
-document.getElementById("button").onclick = function() {
-  name = document.getElementById("myText").value;
-  document.getElementById("firstName").innerHTML = name;
-}*/
-
-/*const userinput = document.getElementById("userinput").value;*/
-
+let choices = document.querySelector('.choices-wrapper')
+let message = document.querySelector('#message')
+const form = document.getElementById("form");
+const uuserName = document.getElementById("uuserName");
+const avatarName = document.querySelector('avatarName')
+const overlay = document.querySelector('overlay1')
+const gridContainer = document.querySelector('.grid-container')
+const bestOf3 = document.querySelector('.bestOf3')
+const bestOfwrap = document.querySelector('.bestOfwrap')
+const bestOfwrap2 = document.querySelector('bestOfwrap2')
+const bestOf = document.querySelector('.bestOf')
+let gameMode = document.querySelector('.gameMode')
 
 let userScore = 0;
 let computerScore = 0;
+
+
+
+
+const bestOf5 = document.querySelector('.bestOf5')
+
+bestOf5.addEventListener('click', bestof5)
 
 reset = document.querySelector('#reset')
 
 
 function ressset() {
-  console.log("hej")
   computerScore_span.innerHTML = 0;
   userScore_span.innerHTML = 0;
   userScore = 0;
@@ -35,7 +42,59 @@ function ressset() {
   result_p.innerHTML = ' '
   winLose_p.innerHTML = ' '
   result_p.innerHTML = "LETS PLAY";
+  choices.style.display = 'flex'
+  bestOf.style.display = 'none'
+  message.innerHTML = 'Pick your choice'
+  if (bestOf3.checked) {
+    gameMode.innerHTML = 'best of 3'
+  } else if (bestOf5.checked) {
+    gameMode.innerHTML = 'best of 5'
+  }
+
+  
 }
+
+function bestof3() {
+ 
+  if(userScore == 2 & userScore > computerScore){
+    result_p.innerHTML =  uuserName.value + ' WINS'
+    choices.style.display = 'none'
+    message.innerHTML = 'Game Over'
+    gameMode.innerHTML = ' '
+    bestOf.style.display = 'flex'
+
+  } else if (computerScore == 2 & computerScore > userScore){
+    result_p.innerHTML = 'Computer WINS'
+    choices.style.display = 'none'
+    message.innerHTML = 'Game Over'
+    gameMode.innerHTML = ' '
+    bestOf.style.display = 'flex'
+  }
+}
+
+function bestof5() {
+  if(userScore == 3 & userScore > computerScore){
+    result_p.innerHTML =  uuserName.value + ' WINS'
+    choices.style.display = 'none'
+    message.innerHTML = 'Game Over'
+    gameMode.innerHTML = ' '
+    bestOf.style.display = 'flex'
+
+  } else if (computerScore == 3 & computerScore > userScore){
+    result_p.innerHTML = 'Computer WINS'
+    choices.style.display = 'none'
+    message.innerHTML = 'Game Over'
+    bestOf.style.display = 'flex'
+  
+    gameMode.innerHTML = ' '
+   
+  }
+}
+
+
+
+
+
 
 function getComputerChoice() {
   let choices = ["r", "p", "s"];
@@ -49,7 +108,9 @@ function convertToWord(letter) {
   return "Scissors";
 }
 
-const wow = ":"
+
+
+
 
 function win(user, computer) {
   userScore++;
@@ -60,6 +121,19 @@ function win(user, computer) {
   winLose_p.innerHTML = "YOU WIN";
   winLose_p.style.color = 'rgb(50, 165, 58)'
 
+  if(bestOf3.checked) {
+    bestof3()
+  } else if (bestOf5.checked) {
+    bestof5()
+  }
+
+
+  
+  /* bestof5() */
+
+  
+ /*  bestof3() */
+
 }
 function lose(user, computer) {
   computerScore++;
@@ -69,6 +143,12 @@ function lose(user, computer) {
     convertToWord(user) + " loses to " + convertToWord(computer);
   winLose_p.innerHTML = "YOU LOSE";
   winLose_p.style.color = 'rgba(200, 20, 50, 0.8)'
+  if(bestOf3.checked) {
+    bestof3()
+  } else if (bestOf5.checked) {
+    bestof5()
+  }
+ 
   
 }
 
@@ -207,11 +287,7 @@ function paper () {
 </div> */}
 
 
-const form = document.getElementById("form");
-const uuserName = document.getElementById("uuserName");
-const avatarName = document.querySelector('avatarName')
-const overlay = document.querySelector('overlay1')
-const gridContainer = document.querySelector('.grid-container')
+
 
 form.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -246,7 +322,7 @@ femaleAvatar.addEventListener('change', function() {
     })
 
 
-onOffBtn = document.querySelector('.onOffBtn')
+/* onOffBtn = document.querySelector('.onOffBtn')
 
 onOffBtn.addEventListener('click', onOffBtn)
 
@@ -262,4 +338,4 @@ function onOff() {
   
   
   }
-}
+} */

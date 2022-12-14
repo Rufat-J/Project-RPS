@@ -13,7 +13,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Rubik+Vinyl&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
     
 </head>
@@ -85,11 +88,17 @@
     <span id="computer-label" class="badge">Computer</span> 
     </div>
    </div>
-   <button onclick="ressset()" id="reset">Reset</button>
+   <div class="bestOf">
+   <label class="bestOfwrap"><input name="bestOf" type="radio" onclick="ressset()" class="bestOf3" id="reset">Best of 3</label>
+   <label class="bestOfwrap2"><input name="bestOf" type="radio" onclick="ressset()" class="bestOf5" id="reset">Best of 5</label>
+  </div>
    <div class="score-wrap"><div><span id="user-score">0</span>:<span id="computer-score">0</span> </div> <div class="result">
+    <br>
+ 
       <p>LETS PLAY</p>
-   
-    </div></div>
+    
+    </div>
+    <span class="gameMode"></span></div>
    
 
     

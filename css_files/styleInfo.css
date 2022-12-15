@@ -75,17 +75,6 @@ h1 {
   text-transform: uppercase;
 }
 
-/* display: flex;
-justify-content: center;
-color: white;
-font-size: 1.5rem;
-text-transform: uppercase;
-margin-top: 50px; */
-
-/* #footwrap p {
-  font-size: 1rem;
-} */
-
 #footerSection a {
   display: inline;
   flex-direction: row;

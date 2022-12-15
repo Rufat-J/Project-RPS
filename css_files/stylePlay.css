@@ -22,15 +22,9 @@ body {
     "footer";
 }
 
-#male{
+#male {
   display: none;
 }
-
-
-
-/*     .grid-container {
-      display:none
-    } */
 
 header {
   display: grid;
@@ -45,7 +39,6 @@ header {
   align-items: start;
   grid-row-start: 2;
   grid-row-end: 3;
-  
 }
 
 #section-choices {
@@ -53,14 +46,12 @@ header {
   grid-area: section2;
 }
 
-
 .avatars {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding-top: 60px;
-
 }
 
 .robotInfo {
@@ -68,8 +59,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 45%
-
+  width: 45%;
 }
 
 .userInfo {
@@ -77,9 +67,8 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 45%
+  width: 45%;
 }
-
 
 .score-board-wrap {
   display: flex;
@@ -90,15 +79,11 @@ header {
   margin: 2% 0;
 }
 
-
-
-.wrapz{
+.wrapz {
   display: flex;
   justify-content: space-around;
   width: 100%;
   align-items: center;
-
-
 }
 
 .avatars {
@@ -107,14 +92,11 @@ header {
   justify-content: space-between;
 }
 
-
 #uuserName1 {
   font-family: "Zen Tokyo Zoo";
   font-size: 4vw;
   padding: 2rem;
-  
 }
-
 
 #computer-label {
   font-family: "Zen Tokyo Zoo";
@@ -125,24 +107,14 @@ header {
 #user-Name {
   width: 170px;
   font-size: 4rem;
-  display:flex;
+  display: flex;
   justify-content: center;
-
 }
 
-
-/* #empty {
-  display:flex;
-  justify-content: center;
-  font-size: 3rem;
-  width: 60px;
-} */
-
-.robot{
+.robot {
   position: relative;
-  width: 25%
+  width: 25%;
 }
-
 
 .winLose {
   display: flex;
@@ -158,13 +130,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
 }
-
-  /* border: 3px double rgb(231, 164, 164);
-  padding: 10px;
-  background-color: #cd75db44; */
-
 
 .winLose-Result div {
   font-family: "Zen Tokyo Zoo";
@@ -179,8 +145,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /*   padding-left: 10%;
-  padding-right: 10%; */
 }
 
 .logo {
@@ -202,7 +166,7 @@ footer {
 .title {
   display: flex;
   justify-content: center;
-  
+
   font-size: 3vw;
   font-weight: bold;
   font-family: "Zen Tokyo Zoo";
@@ -232,8 +196,6 @@ footer {
   }
 }
 
-
-
 .score-board-wrap span {
   font-family: "Zen Tokyo Zoo";
   font-size: 3vw;
@@ -253,7 +215,6 @@ footer {
 
 .score-wrap {
   position: absolute;
-
 }
 
 .result {
@@ -263,12 +224,6 @@ footer {
 .result p {
   margin-top: 5%;
 }
-
-/* .scorewrap {
-  position: relative;
-  display: flex;
-  justify-content: center;
-} */
 
 .choices-wrapper {
   display: flex;
@@ -288,7 +243,6 @@ footer {
   margin: 3%;
   padding: 4%;
   transition: 0.5s;
-  
 }
 
 .r {
@@ -306,7 +260,6 @@ footer {
   cursor: pointer;
   transform: skewx(5deg);
   background-color: #040404;
-  /* border-color: #ff003c; */
   box-shadow: #ff003c;
   box-shadow: 3px 3px 3px 2px rgba(255, 255, 255, 0.2);
 }
@@ -396,25 +349,21 @@ li a {
   color: #fefefd;
 }
 
-
 .male-avatar {
   display: none;
 }
-
 
 .male-avatar {
   border: 5px solid rgb(101, 195, 200);
   background-color: #83a3857d;
   border-radius: 50%;
   box-shadow: 3px 4px 7px 3px rgb(68, 135, 76);
-  
 }
 
 .bestOf {
   display: flex;
   justify-content: space-around;
   width: 20%;
-
 }
 
 .bestOf label:hover {
@@ -423,19 +372,18 @@ li a {
   color: rgb(93, 216, 235);
 }
 
-
 .bestOf label {
   display: flex;
   justify-content: center;
   color: #63cbd9;
   border-radius: 10%;
   font-size: 1.1vw;
-  font-family: 'Zen Dots';
-  background-color:rgba(27, 140, 184, 0.768);
+  font-family: "Zen Dots";
+  background-color: rgba(27, 140, 184, 0.768);
   border: 3px inset rgb(169, 171, 147);
   cursor: pointer;
   padding: 10px;
-  
+
   /* max-width: 8vw; */
   position: relative;
   top: -8vh;
@@ -444,7 +392,6 @@ li a {
 
 .gameMode {
   color: #6bafc2;
-
 }
 
 .bestOf input {
@@ -458,7 +405,8 @@ li a {
   box-shadow: 3px 4px 4px 3px rgb(212, 142, 153);
 }
 
-#male, #female {
+#male,
+#female {
   border: 5px solid rgb(108, 239, 138);
   background-color: #9fb7a050;
   border-radius: 50%;
@@ -468,8 +416,6 @@ li a {
 .score {
   font-size: 6vw;
 }
-
-
 
 @media (max-width: 1000px) {
   .grid-container {
@@ -490,38 +436,63 @@ li a {
   .grid-container {
     grid-template-rows: 0.1fr 0.5fr 0.5fr 0.1fr;
   }
-  
+
   .logo-img {
     width: 5%;
   }
 }
 
-
- #Sten,  #Påse, #Sax,  #Sten2,  #Påse2, #Sax2 {
+#Sten,
+#Påse,
+#Sax,
+#Sten2,
+#Påse2,
+#Sax2 {
   display: none;
   animation: shake 0.5s;
   width: 4vw;
 }
 
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 .userChoice-img {
   display: flex;
   justify-content: flex-start;
   padding: 12px;
-
 }
 
 .computerChoice-img {

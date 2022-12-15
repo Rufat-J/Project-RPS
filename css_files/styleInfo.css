@@ -1,195 +1,196 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 .imglogoInfo {
-    border-radius: 50%; 
-    padding: 1%
+  border-radius: 50%;
+  padding: 1%;
 }
-
 
 body {
-    background-image: url('/images/background2.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-   
+  background-image: url("/images/image.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
-
 h1 {
-    display:flex;
-    justify-content: center;
-    text-align: center; 
-    font-size: 4vw;
-    font-weight: bold;
-    font-family: 'Zen Tokyo Zoo';
-    text-transform: uppercase;
-    color: #ffd9e2;
-    text-shadow: 0 0 0 transparent,
-    0 0 10px #ff003c,
-    0 0 20px rgba(255, 0, 60, 0.5),
-    0 0 40px #ff003c,
-    0 0 100px #ff003c,
-    0 0 200px #ff003c,
-    0 0 300px #ff003c,
-    0 0 500px #ff003c,
-    0 0 1000px #ff003c;
-    animation: animate 3s infinite alternate;
-    margin-bottom: 1%;
+  display: flex;
+  justify-content: center;
+  font-size: 5vw;
+  font-weight: bold;
+  font-family: "Zen Tokyo Zoo";
+  text-transform: uppercase;
+  color: #ffd9e2;
+  text-shadow: 0 0 0 transparent, 0 0 10px #000000,
+    0 0 20px rgba(212, 167, 17, 0.5), 0 0 40px #62a0ad, 0 0 100px #49a4cb,
+    0 0 200px #44a9cb, 0 0 300px #88a8b5;
+  animation: animate 3s infinite alternate;
+  align-items: center;
 }
 
 @keyframes animate {
-    40% {
-        opacity:1;
-    }
-    42% {
-        opacity: 0.8%
-    }
-    43% {
-        opacity: 1%
-    }
-    45% {
-        opacity: 0.3;
-    }
-    46% {
-        opacity: 1;
-    }
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.8%;
+  }
+  43% {
+    opacity: 1%;
+  }
+  45% {
+    opacity: 0.3;
+  }
+  46% {
+    opacity: 1;
+  }
 }
 
 .info {
-    text-align: center; 
-    font-size: 2vw;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    color: #eabfc8;
-    margin-top: 3%;
-    padding: 3%;
+  text-align: center;
+  font-size: 2vw;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: #eabfc8;
+  margin-top: 3%;
+  padding: 3%;
+  line-height: 2.5;
 }
 
-h4 {
-    color: white;
-    text-align: center;
-  }
-  
+.links {
+  color: #f7e5e9;
+}
 
-  
-  #footerwrap  {
-    margin-top: 0%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  
-  }
-  
-  #footerSection a {
-    display: inline;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .fa {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    width: 5%;
-    height:15%;
-    text-align: center;
-    text-decoration: none;
-  }
-  
-  
-  .fa-facebook {
-    background: #000309d7;
-    color: rgb(253, 252, 252);
-    
-  }
-  
-  .fa-twitter {
-    background: #000309d7;
-    color: #fdfbfb;
-  
-  }
-  
-  .fa-instagram {
-    background: #000309d7;
-    color: #fefefd;
-  }
-  
+.links:visited,
+.links:active {
+  color: #f7e5e9;
+  line-height: 2px;
+}
+
+#footerwrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+/* display: flex;
+justify-content: center;
+color: white;
+font-size: 1.5rem;
+text-transform: uppercase;
+margin-top: 50px; */
+
+/* #footwrap p {
+  font-size: 1rem;
+} */
+
+#footerSection a {
+  display: inline;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  width: 5%;
+  height: 15%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-facebook {
+  background: #000309d7;
+  color: rgb(253, 252, 252);
+}
+
+.fa-twitter {
+  background: #000309d7;
+  color: #fdfbfb;
+}
+
+.fa-instagram {
+  background: #000309d7;
+  color: #fefefd;
+}
+
 #footerwrap p {
-    font-size: 1vw;
-    color: white;
-    font-family: 'Roboto', sans-serif;
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: white;
 }
 
 a {
-    text-decoration: none;
-    color:rgba(255, 0, 60, 0.5)
+  text-decoration: none;
+  color: rgba(255, 0, 60, 0.5);
 }
 
-@media (max-width: 1200px){
-    h1 {
-      margin-top: 10%;
-    }
-    #footerwrap {
-      margin-top: 20%;
-    }
-    #footerwrap p {
-        font-size: 3vw;
-      }
+@media (max-width: 1200px) {
+  h1 {
+    margin-top: 10%;
   }
-  
-  @media (max-width: 900px){
-    h3 {
-      font-size: 3vw;
-    }
-    #footerwrap {
-      margin-top: 20%;
-    }
-    #rules {
-      margin-top: 10%;
-    }
+  #footerwrap {
+    margin-top: 20%;
+  }
+  #footerwrap p {
+    font-size: 3vw;
+  }
+}
 
-    .info {
-        font-size: 3vw;
-    }
-    a {
-        font-size: 3vw;
-    }
-  
-    h1 {
-      margin-top: 5%;
-    }
-  
-    #footerwrap p {
-      font-size: 3vw;
-    }
+@media (max-width: 900px) {
+  h3 {
+    font-size: 3vw;
   }
+  #footerwrap {
+    margin-top: 20%;
+  }
+  #rules {
+    margin-top: 10%;
+  }
+
+  .info {
+    font-size: 3vw;
+  }
+  a {
+    font-size: 3vw;
+  }
+
+  h1 {
+    margin-top: 5%;
+  }
+
+  #footerwrap p {
+    font-size: 3vw;
+  }
+}
 
 @media (max-width: 700px) {
-   .info {
-        font-size: 4vw;
-    }
+  .info {
+    font-size: 4vw;
+  }
 
-    a {
-        font-size: 5vw;
-    }
-    #footerwrap {
-        margin-top: 20%;
-      }
+  a {
+    font-size: 5vw;
+  }
+  #footerwrap {
+    margin-top: 20%;
+  }
 
-    #footerwrap p {
-        font-size: 5vw;
-      }
+  #footerwrap p {
+    font-size: 5vw;
+  }
 }
 
 @media (max-width: 430px) {
-h1 {
+  h1 {
     font-size: 6vw;
-}
-.info {
+  }
+  .info {
     font-size: 5vw;
+  }
 }
-}
-

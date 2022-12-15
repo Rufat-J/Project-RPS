@@ -16,52 +16,6 @@ body {
   justify-content: center;
 }
 
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
@@ -70,28 +24,23 @@ input:checked + .slider:before {
 
 #readthis {
   position: relative;
- 
+
   width: 5%;
-  animation: floaReadthis 4s infinite  normal ease-out;
+  animation: floaReadthis 4s infinite normal ease-out;
 }
 
 @keyframes floaReadthis {
-    0% {
-        right:2vw;
-    }
-
-    50% {
-        right: 0;
-    }
-
-    100% {
-      right: 2vw;
+  0% {
+    right: 2vw;
   }
-}
- 
 
-#logo-gif {
-  border: 3px solid rgb(151, 161, 219);
+  50% {
+    right: 0;
+  }
+
+  100% {
+    right: 2vw;
+  }
 }
 
 .navbar {
@@ -118,7 +67,6 @@ header {
 .nav-bar {
   display: grid;
   grid-area: nav;
-  
 }
 
 #kid {
@@ -126,7 +74,6 @@ header {
   z-index: -1;
   left: 10px;
 }
-
 
 footer {
   display: grid;
@@ -138,7 +85,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center ; 
+  align-items: center;
 }
 
 footer ul {
@@ -179,7 +126,6 @@ footer ul {
     opacity: 1;
   }
 }
-
 
 .navwrapper {
   display: flex;
@@ -226,17 +172,20 @@ footer ul {
   font-size: 2vw;
   color: whitesmoke;
   text-transform: uppercase;
-  background: -webkit-linear-gradient(rgb(233, 126, 117), rgb(139, 151, 151), rgb(215, 215, 216));
+  background: -webkit-linear-gradient(
+    rgb(233, 126, 117),
+    rgb(139, 151, 151),
+    rgb(215, 215, 216)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* margin-top:10%; */
 }
 
 h4 {
   display: flex;
   justify-content: center;
   color: white;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   text-transform: uppercase;
   margin-top: 50px;
 }
@@ -257,7 +206,7 @@ li a {
   flex-direction: column;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
   .navwrapper {
     display: flex;
     flex-direction: column;
@@ -271,11 +220,6 @@ li a {
     font-size: 2vh;
   }
 
-
-  h4 {
-    font-size: 15px;
-  }
-
   li a {
     font-size: 15px;
   }
@@ -285,4 +229,3 @@ li a {
   padding: 20px;
   padding-bottom: 40px;
 }
-

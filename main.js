@@ -18,6 +18,14 @@ const bestOfwrap = document.querySelector('.bestOfwrap')
 const bestOfwrap2 = document.querySelector('bestOfwrap2')
 const bestOf = document.querySelector('.bestOf')
 let gameMode = document.querySelector('.gameMode')
+const sten = document.querySelector('#Sten')
+const påse = document.querySelector('#Påse')
+const sax = document.querySelector('#Sax')
+const sten2 = document.querySelector('#Sten2')
+const påse2 = document.querySelector('#Påse2')
+const sax2 = document.querySelector('#Sax2')
+
+
 
 let userScore = 0;
 let computerScore = 0;
@@ -45,6 +53,12 @@ function ressset() {
   choices.style.display = 'flex'
   bestOf.style.display = 'none'
   message.innerHTML = 'Pick your choice'
+  påse.style.display = 'none'
+  sax.style.display = 'none'
+  sten.style.display = 'none'
+  påse2.style.display = 'none'
+  sax2.style.display = 'none'
+  sten2.style.display = 'none'
   if (bestOf3.checked) {
     gameMode.innerHTML = 'best of 3'
   } else if (bestOf5.checked) {
@@ -70,6 +84,8 @@ function bestof3() {
     gameMode.innerHTML = ' '
     bestOf.style.display = 'flex'
   }
+
+
 }
 
 function bestof5() {
@@ -91,33 +107,68 @@ function bestof5() {
   }
 }
 
-
-
-
-
-
 function getComputerChoice() {
   let choices = ["r", "p", "s"];
   let randomNum = Math.floor(Math.random() * 3);
   return choices[randomNum];
 }
 
+ 
+
 function convertToWord(letter) {
-  if (letter === "r") return "Rock";
-  if (letter === "p") return "Paper";
-  return "Scissors";
+
+  påse.style.display = 'none'
+  sax.style.display = 'none'
+  sten.style.display = 'none'
+
+  if (letter === "r") { 
+  sten.style.display = 'block'
+
+  
+}
+  if (letter === "p") { 
+    påse.style.display = "block" ;
+ 
+  }
+
+  if (letter === 's') { 
+    sax.style.display = "block";
+
+   }
+  
 }
 
 
 
+function convertToWord2(letter) {
+  påse2.style.display = 'none'
+  sax2.style.display = 'none'
+  sten2.style.display = 'none' ;
+
+  if (letter === "r") { 
+  sten2.style.display = "block" ;
+}
+
+  if (letter === "p") { 
+    påse2.style.display = "block" ;
+ 
+  }
+
+  if (letter === 's') { 
+    sax2.style.display = "block";
+  
+   }
+  
+}
+
 
 
 function win(user, computer) {
-  userScore++;
+  userScore++
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
-  result_p.innerHTML =
-    convertToWord(user) + " beats " + convertToWord(computer);
+  convertToWord(user) +  + convertToWord2(computer);
+  result_p.innerText =  " beats "
   winLose_p.innerHTML = "YOU WIN";
   winLose_p.style.color = 'rgb(50, 165, 58)'
 
@@ -127,20 +178,16 @@ function win(user, computer) {
     bestof5()
   }
 
-
-  
-  /* bestof5() */
-
-  
- /*  bestof3() */
-
 }
+
+
+
 function lose(user, computer) {
   computerScore++;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
-  result_p.innerHTML =
-    convertToWord(user) + " loses to " + convertToWord(computer);
+  convertToWord(user) + convertToWord2(computer);
+  result_p.innerHTML = " loses to " 
   winLose_p.innerHTML = "YOU LOSE";
   winLose_p.style.color = 'rgba(200, 20, 50, 0.8)'
   if(bestOf3.checked) {
@@ -156,9 +203,8 @@ function lose(user, computer) {
 
 
 function draw(user, computer) {
-
-  result_p.innerHTML =
-    convertToWord(user) + " is equal to " + convertToWord(computer);
+  convertToWord(user) + convertToWord2(computer);
+  result_p.innerHTML =  " is equal to " 
   winLose_p.innerHTML = "IT´S A DRAW";
   winLose_p.style.color = 'orange'
 }

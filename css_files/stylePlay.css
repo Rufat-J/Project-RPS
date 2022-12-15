@@ -4,26 +4,6 @@
   box-sizing: border-box;
 }
 
-/* #reset {
-
-  display: flex;
-  cursor: pointer;
-  align-items: center;
-  font-size: 2vw;
-  font-family: 'Zen Tokyo Zoo' ;
-  border: 3px double rgb(243, 238, 238);
-  background-color: #1c97e4a0;
-  color: rgb(250, 250, 250);
-  border-radius: 20%;
-  padding: 10px;
-  margin: 1rem;
-  position: relative;
-  top: -90px;
-  max-width: 10vw;
-  min-width: 6vw;
-
-}
- */
 body {
   background-image: url("/images/image.png");
   background-repeat: no-repeat;
@@ -416,27 +396,6 @@ li a {
   color: #fefefd;
 }
 
-@media (max-width: 1000px) {
-  .grid-container {
-    grid-template-rows: 0.7fr 0.9fr 3fr 0.1fr;
-  }
-}
-
-@media (max-width: 415px) {
-  .grid-container {
-    grid-template-rows: 2fr 3fr 5fr 0.2fr;
-  }
-}
-
-@media (orientation: landscape) {
-  .grid-container {
-    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.1fr;
-  }
-  
-  .logo-img {
-    width: 5%;
-  }
-}
 
 .male-avatar {
   display: none;
@@ -470,17 +429,17 @@ li a {
   justify-content: center;
   color: #63cbd9;
   border-radius: 10%;
-  font-size: 1.3rem;
+  font-size: 1.1vw;
   font-family: 'Zen Dots';
   background-color:rgba(27, 140, 184, 0.768);
   border: 3px inset rgb(169, 171, 147);
   cursor: pointer;
   padding: 10px;
-  max-width: 8vw;
+  
+  /* max-width: 8vw; */
   position: relative;
-  top: -3vh;
-
-
+  top: -8vh;
+  margin: 10px;
 }
 
 .gameMode {
@@ -491,11 +450,6 @@ li a {
 .bestOf input {
   display: none;
 }
-
-
-
-
-
 
 .robot {
   border: 5px solid rgb(235, 102, 100);
@@ -511,416 +465,67 @@ li a {
   box-shadow: 3px 4px 4px 3px rgb(130, 236, 199);
 }
 
-/* #female {
-  border: 5px solid rgb(108, 239, 138);
-  background-color: #9fb7a050;
-  border-radius: 50%;
-  box-shadow: 3px 4px 4px 3px rgb(12, 238, 159);
-} */
-
-
-
-.score-wrap div {
-  font-size: 6vw 
-
-}
-
-.score-wrap p {
-  font-size: 3vw
+.score {
+  font-size: 6vw;
 }
 
 
 
-
-/*
-@media (max-width: 600px) {
-  #user-score {
-    font-size: 1.4rem;
-    padding: 2%;
-  }
-
-  #computer-score {
-    font-size: 1.4rem;
-    padding: 2%;
-  }
-
-  .score-board {
-    font-size: 2rem;
-    border: 0.3rem double rgb(202, 21, 67);
-  }
-}*/
-/*
 @media (max-width: 1000px) {
-  #user-label {
-    left: -600%;
-    margin-left: 10%;
-    font-size: 2rem;
-  }
-
-  #computer-label {
-    right: -600%;
-    font-size: 2rem;
-  }
-
   .grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.7fr 1fr 2fr;
-    grid-template-areas:
-      "header"
-      "section1"
-      "section2"
-      "footer";
-  }
-  #message {
-    font-size: 2rem;
-  }
-
-  .winLose {
-  
-    margin-top: 23%;
-  }
-
-  
-
-  #user-score {
-  
-    padding: 2%;
-  }
-
-  #computer-score {
-  
-    padding: 2%;
-  }
-
-  .score-board {
-    font-size: 2.5rem;
-    border: 0.3rem double rgb(202, 21, 67);
+    grid-template-rows: 2fr 2fr 2fr 0.2fr;
   }
 }
-*/
 
-/*.score-board {
-  
-   position: relative;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 5%;
-   font-size: 3vh;
-   border: 7px double white;
-   height: 15%;
-  
-
-} */
-
-/* .score-board-wrap {
-  
-  position: relative;
-  padding: 2%;
-  display: flex;
-  justify-content: center;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-
-  align-items: center;
-} */
-
-/* #user-label {
- position: relative;
- top: 3.5vh;
- right: 20vh;
- height: 10%;
- font-size: 2rem; 
- 
-
-  
-}*/
-
-/* #computer-label {
-  position: relative;
-  top: 3.5vh;
-  right: -1vh;
-  justify-content: space-between;
-  height: 10%;
-  font-size: 2rem;
-} */
-
-/* #user-score {
-
-  display: flex;
-  position: relative;
-  justify-content: center;
- 
+@media (max-width: 415px) {
+  .grid-container {
+    grid-template-rows: 1fr 2fr 3fr 1fr;
+  }
+  .score-wrap {
+    font-family: Arial, Helvetica, sans-serif;
+  }
 }
 
-#computer-score {
+@media (orientation: landscape) {
+  .grid-container {
+    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.1fr;
+  }
+  
+  .logo-img {
+    width: 5%;
+  }
+}
+
+
+ #Sten,  #Påse, #Sax,  #Sten2,  #Påse2, #Sax2 {
+  display: none;
+  animation: shake 0.5s;
+  width: 4vw;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.userChoice-img {
   display: flex;
-  position: relative;
-  justify-content: center;
-}  */
+  justify-content: flex-start;
+  padding: 12px;
 
-/* .score-board {
-   
-    font-family: 'Zen Tokyo Zoo';
-    margin: 20px auto;
-    border: 7px double rgb(202, 21, 67);
-    border-radius: 20px;
-    text-align: center;
-    width: 200px;
-    color: white;
-    font-size: 100px;
-    position: relative;
-  }
- */
+}
 
-/*   .img-logo {
-    padding: 1%;
-  }
-
-  #imglogo  {
-    border-radius: 50%;
-  }
-
-  header,
-  .score-board,
-  .badge,
-  .result,
-  .winLose,
-  #message {
-    font-family: sans-serif;
-  }
-  
-  body {
-    background-image: url('/images/background2.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-  }
-  
-  header {
-    padding: 10px;
-    font-size: 30px;
-  }
-  
-  header > h1 {
-        display: grid;  
-        position: relative;
-        top: 20px;
-        grid-area: header;
-        text-align: center; 
-        font-size: 80px;
-        font-weight: bold;
-        font-family: 'Zen Tokyo Zoo';
-        text-transform: uppercase;
-        color: #ffd9e2;
-        text-shadow: 0 0 0 transparent,
-        0 0 10px #ff003c,
-        0 0 20px rgba(255, 0, 60, 0.5),
-        0 0 40px #ff003c,
-        0 0 100px #ff003c,
-        0 0 200px #ff003c,
-        0 0 300px #ff003c,
-        0 0 500px #ff003c,
-        0 0 1000px #ff003c;
-        animation: animate 3s infinite alternate;
-      }
-      
-      @keyframes animate {
-          40% {
-              opacity:1;
-          }
-          42% {
-              opacity: 0.8%
-          }
-          43% {
-              opacity: 1%
-          }
-          45% {
-              opacity: 0.3;
-          }
-          46% {
-              opacity: 1;
-          }
-      }
-  
-  
-  .score-board {
-   
-    font-family: 'Zen Tokyo Zoo';
-    margin: 20px auto;
-    border: 7px double rgb(202, 21, 67);
-    border-radius: 20px;
-    text-align: center;
-    width: 200px;
-    color: white;
-    font-size: 100px;
-    position: relative;
-  }
-  
-  .badge {
-   
-    display: grid;  
-    top: 20px;
-    grid-area: header;
-    text-align: center; 
-    font-size: 30px;
-    font-weight: bold;
-    font-family: 'Zen Tokyo Zoo';
-    text-transform: uppercase;
-    color: #d7a5f1;
-    text-shadow: 0 0 0 transparent,
-    0 0 10px #ff003c,
-    0 0 20px rgba(255, 0, 60, 0.5),
-    0 0 40px #ff003c,
-    0 0 100px #ff003c,
-    0 0 200px #ff003c,
-    0 0 300px #ff003c,
-    0 0 500px #ff003c,
-    0 0 1000px #ff003c;
-  }
-  
-  
-  #user-label {
-    position: absolute;
-    top: 35px;
-    left: -100px;
-    
-  }
-  
-  #computer-label {
-    position: absolute;
-    top: 35px;
-    right: -100px;
-  }
-  
-  .result {
-    font-family: 'Zen Tokyo Zoo';
-    font-size: 40px;
-    text-align: center;
-    color: white;
-    padding: 1px;
-  }
-  
-  .winLose {
-    font-family: 'Zen Tokyo Zoo';
-    font-size: 40px;
-    text-align: center;
-    color: white;
-    padding: 1px;
-  }
-  
-  .choicesWrapper {
-    margin: 50px 100px;
-    text-align: center;
-  }
-  
-  .choice {
-    border: 8px double white;
-    border-radius: 20px;
-    display: inline-block;
-    margin: 0 20px;
-    padding: 20px;
-    transition: 0.5s;
-   
- 
-  }
-  
-  .choice:hover {
-    cursor: pointer;
-    transform: skewx(5deg);
-    background-color: #040404;
-
-    box-shadow: #ff003c;
-    box-shadow: 3px 3px 3px 2px rgba(255, 255, 255, 0.2);
-  }
-  
-  #message {
-    font-family: 'Zen Tokyo Zoo';
-    text-align: center;
-    color: white;
-    font-size: 30px;
-  }
-  
-
-  
- 
-  
-
-  .r {
-    width: 100%;
-  }
-
-  .p {
-    width:86%;
-  }
-
-  .s {
-    width: 70%;
-  }
-
-
-  #r:hover {
-    border-color: #cd75db;
-    transform: scale(1.2);
-    background: rgba(156, 150, 156, 0);
-    box-shadow: 0 0 55px #cd75db;
-    color: rgb(93, 216, 235);
-  }
-
-  #s:hover {
-    border-color: #FFFB6F;
-    transform: scale(1.2);
-    background: rgba(20, 19, 20, 0);
-    box-shadow: 0 0 55px #FFFB6F;
-    color: rgb(93, 216, 235);
-  }
-
-  #p:hover {
-    border-color: #6CCCFB;
-    transform: scale(1.2);
-    background: rgba(20, 19, 20, 0);
-    box-shadow: 0 0 55px rgb(59, 155, 246);
-    color: rgb(93, 216, 235);
-   
-  }
-
-
-  @media (max-width: 520px) {
-    #user-label {
-      font-size: 10%;
-    }
-
-    
-    #computer-label {
-      font-size: 10%;
-    }
-
-    header h1 {
-      font-size: 4vh;
-      
-    }
-
-    .score-board {
-      position: relative;
-      width: 100px;
-      height: 80px;
-      font-size: 50px;
-   
-    }
-
-   .choicesWrapper {
-    display: flex;
-    flex-direction: column;
-    
-    width: 50%;
-   }
-   .choise {
-    width: 50%;
-   }
-
-   .result {
-    font-size: 20px;
-   }
-  } */
+.computerChoice-img {
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px;
+}

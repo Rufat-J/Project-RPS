@@ -24,6 +24,9 @@ const sax = document.querySelector("#Sax");
 const sten2 = document.querySelector("#Sten2");
 const påse2 = document.querySelector("#Påse2");
 const sax2 = document.querySelector("#Sax2");
+const change = document.querySelector('#changeAvatar')
+
+
 
 let userScore = 0;
 let computerScore = 0;
@@ -275,3 +278,8 @@ femaleAvatar.addEventListener("change", function () {
     female.style.display = "flex";
   }
 });
+
+
+change.addEventListener('click', function() {
+  document.querySelector(".overlay1").style.display = "flex";
+})

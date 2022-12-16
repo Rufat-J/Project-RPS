@@ -124,3 +124,39 @@ button:active {
   filter: drop-shadow(0 0 10px #6ffaff);
   color: rgb(93, 216, 235);
 }
+
+
+@media only screen 
+    and (device-width : 896px) 
+    and (device-height : 414px) 
+    and (-webkit-device-pixel-ratio : 2) {
+      #avatar-male, #avatar-female{
+        width: 20vh;
+      
+      }
+      #avatar {
+        margin-top: 10%;
+        font-size: 2vw
+      }
+
+      header {
+        height: 0.1vh;
+      }
+
+      #section-score-board{
+        height: 50vh;
+      }
+
+      .winLose {
+        display: none
+      }
+
+      .bestOf label {
+        top: - 20vh
+      }
+  
+       
+    
+
+     }
+
